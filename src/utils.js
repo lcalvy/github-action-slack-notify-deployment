@@ -15,7 +15,7 @@ function buildSlackAttachments({ status, color, tag, projectName, actor, repoUrl
         },
         {
           title: 'Tag',
-          value: `<${repoUrl}/commit/${tag} | ${tag}>`,
+          value: `<${repoUrl}/tree/${tag} | ${tag}>`,
           short: true,
         },
         {
