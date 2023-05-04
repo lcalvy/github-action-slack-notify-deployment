@@ -35,7 +35,7 @@ describe('Utils', () => {
 
         expect(attachments[0].fields.find(a => a.title === 'Action')).toEqual({
           title: 'Action',
-          value: `<https://github.com/Discontract/github-action-slack-notify-deployment/commit/abc123/checks | CI>`,
+          value: `<https://github.com/Discontract/github-action-slack-notify-deployment/tree/abc123/checks | CI>`,
           short: true,
         });
       });
@@ -55,7 +55,7 @@ describe('Utils', () => {
 
         expect(attachments[0].fields.find(a => a.title === 'Branch')).toEqual({
           title: 'Branch',
-          value: `<https://github.com/Discontract/github-action-slack-notify-deployment/commit/abc123 | my-branch>`,
+          value: `<https://github.com/Discontract/github-action-slack-notify-deployment/tree/abc123 | my-branch>`,
           short: true,
         });
       });
@@ -67,7 +67,7 @@ describe('Utils', () => {
 
         expect(attachments[0].fields.find(a => a.title === 'Action')).toEqual({
           title: 'Action',
-          value: `<https://github.com/Discontract/github-action-slack-notify-deployment/commit/xyz678/checks | CI>`,
+          value: `<https://github.com/Discontract/github-action-slack-notify-deployment/tree/xyz678/checks | CI>`,
           short: true,
         });
       });
